@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node -e \"console.log('open browser at http://localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
-    "bundle": "node node_modules/react-vr/scripts/bundle.js && rimraf vr/live && mkdir -p vr/live/static_assets && cp static_assets/* vr/live/static_assets/ && cp vr/index.html vr/live/ && cp vr/build/client.bundle.js vr/live/ && cp vr/build/index.bundle.js vr/live/",
+    "bundle": "node node_modules/react-vr/scripts/bundle.js && rimraf vr/live && mkdir -p vr/live/static_assets && cp static_assets/* vr/live/static_assets/ && cp vr/prod.index.html vr/live/index.html && cp vr/build/client.bundle.js vr/live/ && cp vr/build/index.bundle.js vr/live/",
     "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
     "devtools": "react-devtools",
     "test": "jest"
